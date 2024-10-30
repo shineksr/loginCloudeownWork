@@ -78,8 +78,12 @@ nav {
     max-width: 400px;
     color: #fff;
     backdrop-filter: blur(20px);
+    transform: scale(0);
+    transition: height .2s ease;
 }
-
+.modal-content.active-btn{
+    transform: scale(1);
+}
 .close {
     float: right;
     cursor: pointer;
